@@ -1,0 +1,59 @@
+{
+  "name": "@arzyu/airpack-cordova",
+  "version": "0.0.10",
+  "description": "Webpack config for cordova project",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prebuild": "rimraf dist # rm -rf dist",
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.9.0",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/preset-typescript": "^7.9.0",
+    "@hot-loader/react-dom": "^16.13.0",
+    "@types/copy-webpack-plugin": "^5.0.0",
+    "@types/dotenv-webpack": "^1.7.0",
+    "@types/html-webpack-plugin": "^3.2.2",
+    "@types/react-css-modules": "^4.6.2",
+    "@types/webpack": "^4.41.8",
+    "@types/webpack-dev-server": "^3.10.1",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "babel-plugin-react-css-modules": "^5.2.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.4.2",
+    "dotenv": "^8.2.0",
+    "dotenv-webpack": "^1.7.0",
+    "ejs-compiled-loader": "github:arzyu/ejs-compiled-loader",
+    "html-webpack-plugin": "^3.2.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "react-devtools": "^4.6.0",
+    "react-hot-loader": "^4.12.20",
+    "resolve-ts-aliases": "^1.0.1",
+    "style-loader": "^1.1.3",
+    "url-loader": "^4.0.0",
+    "webpack": "^4.42.1"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "ts-node": "^8.8.1",
+    "typescript": "^3.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arzyu/airpack-cordova"
+  },
+  "license": "MIT"
+}
